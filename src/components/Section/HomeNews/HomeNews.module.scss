@@ -1,0 +1,57 @@
+.homeBox {
+    margin: 60px 0;
+
+    .homeItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+
+        .title {
+            color: rgb(0, 0, 0);
+            font-family: 'Roboto';
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: 0px;
+        }
+
+        .moreNews {
+            color: rgb(229, 9, 20);
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: 0px;
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width:997px) {
+        .homeItem {
+
+            .title {
+                font-size: 24px;
+            }
+
+            .moreNews {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width:767px) {
+        .homeItem {
+            margin-top: 80px;
+
+            .title {
+                font-size: 18px;
+            }
+
+            .moreNews {
+                font-size: 14px;
+            }
+        }
+    }
+
+}

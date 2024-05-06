@@ -1,0 +1,49 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	height: 646px;
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		padding: 38px;
+		gap: 24px;
+		border-radius: 30px;
+		height: 223px;
+		margin-top: 56px;
+
+		background: rgb(98, 98, 98);
+
+		h1 {
+			color: rgb(252, 252, 252);
+			font-family: Roboto;
+			font-size: 58px;
+			font-weight: 700;
+			line-height: 120%;
+			letter-spacing: 0px;
+			text-align: center;
+			width: 651px;
+		}
+
+		p {
+			color: rgb(252, 252, 252);
+			font-family: Roboto;
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 120%;
+			letter-spacing: 0px;
+			text-align: center;
+			width: 651px;
+		}
+	}
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+		max-height: 646px;
+	}
+}

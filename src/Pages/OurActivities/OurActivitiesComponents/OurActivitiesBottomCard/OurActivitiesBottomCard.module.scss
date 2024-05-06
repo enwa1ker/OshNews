@@ -1,0 +1,128 @@
+.OurActivitiesBBox {
+    margin-top: 60px;
+
+    .title {
+        color: rgb(0, 0, 0);
+        font-family: 'Roboto';
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .OurActivitiesContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        margin-top: 30px;
+        gap: 20px;
+
+        .leftItem {
+            width: 375px;
+
+            .ourArt {
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width:997px) {
+            .leftItem {
+                width: 50%;
+            }
+        }
+
+        .rightItem {
+            flex: 0 1 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .rightContent {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+
+                .one {
+                    color: rgb(0, 166, 166);
+                    font-family: 'Roboto';
+                    font-size: 50px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    letter-spacing: 0px;
+                }
+
+                .two {
+                    color: rgb(113, 88, 125);
+                    font-family: 'Roboto';
+                    font-size: 50px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    letter-spacing: 0px;
+                }
+
+                .three {
+                    color: rgb(243, 76, 65);
+                    font-family: 'Roboto';
+                    font-size: 50px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    letter-spacing: 0px;
+                }
+
+                .for {
+                    color: rgb(255, 171, 38);
+                    font-family: 'Roboto';
+                    font-size: 50px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    letter-spacing: 0px;
+                }
+
+                .five {
+                    color: rgb(248, 91, 106);
+                    font-family: 'Roboto';
+                    font-size: 50px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    letter-spacing: 0px;
+                }
+
+                .rightParagraf {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    .titleParagraf {
+                        color: rgb(33, 33, 33);
+                        font-family: 'Roboto';
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 120%;
+                        letter-spacing: 0px;
+                    }
+
+                    .paragraf {
+                        color: rgb(0, 0, 0);
+                        font-family: 'Roboto';
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 120%;
+                        letter-spacing: 0px;
+                        text-align: left;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media (max-width:767px) {
+        .OurActivitiesContent {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

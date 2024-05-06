@@ -1,0 +1,233 @@
+.ProjectCard {
+    margin-top: 60px;
+
+
+
+    .leftCard {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .projectImg {
+            border-radius: 30px 30px 30px 0px;
+            height: 160px;
+            width: 230px;
+        }
+
+        .leftItem {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+
+            .titleTop {
+                color: rgb(33, 33, 33);
+                font-family: 'Roboto';
+                font-size: 18px;
+                font-weight: 900;
+                line-height: 120%;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+
+            .titleCenter {
+                color: rgb(33, 33, 33);
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 120%;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+
+            .titleBottom {
+                color: rgb(229, 9, 20);
+                font-family: 'Roboto';
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 120%;
+                letter-spacing: 0px;
+                text-align: left;
+                cursor: pointer;
+            }
+        }
+
+        @media (max-width:997px) {
+            .leftItem {
+                .titleTop {
+                    font-size: 14px;
+                }
+
+                .titleCenter {
+                    font-size: 12px;
+                }
+
+                .titleBottom {
+                    font-size: 12px;
+                }
+            }
+        }
+
+
+    }
+
+    @media (max-width:1024px) {
+        .leftCard {
+            display: flex;
+            // flex-direction: column;
+
+            .projectImg {
+                width: 230px;
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        .leftCard {
+            display: flex;
+            margin-bottom: 50px;
+
+            .projectImg {
+                width: 230px;
+            }
+        }
+    }
+
+    .rightCard {
+        display: flex;
+        gap: 20px;
+
+        .projectImg {
+            border-radius: 30px 30px 30px 0px;
+            height: 160px;
+            width: 230px;
+        }
+
+        .rightItem {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            gap: 12px;
+
+            .titleTop {
+                color: rgb(33, 33, 33);
+                font-family: 'Roboto';
+                font-size: 18px;
+                font-weight: 900;
+                line-height: 120%;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+
+            .titleCenter {
+                color: rgb(33, 33, 33);
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 120%;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+
+            .titleBottom {
+                color: rgb(229, 9, 20);
+                font-family: 'Roboto';
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 120%;
+                letter-spacing: 0px;
+                text-align: left;
+                cursor: pointer;
+            }
+        }
+
+        @media (max-width:997px) {
+            .rightItem {
+                .titleTop {
+                    font-size: 14px;
+                }
+
+                .titleCenter {
+                    font-size: 12px;
+                }
+
+                .titleBottom {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:1024px) {
+        .rightCard {
+            display: flex;
+            // flex-direction: column;
+
+            .projectImg {
+                width: 230px;
+            }
+        }
+    }
+
+
+    @media (max-width:1024px) {
+        .ProjectCardBox {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+
+
+.slick-arrow {
+    background-color: #fff;
+    z-index: 10;
+}
+
+.slick-prev {
+    background-color: #Fff;
+    border-top: 2.5px solid #000;
+    border-left: 2.5px solid #000;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    // left: 240px;
+    top: 200px;
+}
+
+.slick-next {
+    background-color: #Fff;
+    border-top: 2.5px solid #000;
+    border-left: 2.5px solid #000;
+    width: 20px;
+    height: 20px;
+    transform: rotate(135deg);
+    right: 240px;
+    top: 200px;
+}
+
+.slick-next::before {
+    content: '';
+    border: none;
+    font-size: 32px;
+    color: #000;
+    background-color: #fff;
+    font-family: 700;
+}
+
+.slick-prev::before {
+    content: '';
+    border: none;
+    color: #000;
+    font-size: 32px;
+    background-color: #fff;
+}
+
+@media (max-width:768px) {
+    .slick-prev {
+        left: 240px;
+    }
+}

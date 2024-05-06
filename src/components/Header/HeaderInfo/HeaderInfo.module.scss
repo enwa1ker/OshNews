@@ -1,0 +1,108 @@
+@import '../../../SCSS/vars';
+
+.header_info {
+	width: 100%;
+	height: 55px;
+
+	border-radius: 0px 0px 30px 30px;
+
+	box-shadow: 0px 1px 5.1px 0px rgba(0, 0, 0, 0.25);
+	background: rgb(232, 195, 47);
+
+	.headerBox {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+
+		.company_info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 32px;
+
+			.address {
+				display: flex;
+				align-items: center;
+				gap: 6px;
+
+				.img_address {
+					width: 10.5px;
+					height: 15px;
+				}
+
+				.img_phone {
+					width: 13.5px;
+					height: 13.5px;
+				}
+
+				p {
+					color: rgb(33, 33, 33);
+					font-family: Roboto;
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 21px;
+					letter-spacing: 0%;
+					text-align: left;
+				}
+			}
+		}
+
+		.social_network {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 32px;
+
+			.logo img {
+				width: 52px;
+				height: 23px;
+			}
+
+			.social_icons {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+
+				img {
+					width: 21px;
+					height: 21px;
+				}
+			}
+		}
+	}
+}
+
+.languageDropdown {
+	width: 77px;
+	height: 36px;
+	border: none; // Убираем границу
+	border-radius: 50%;
+	padding: 0 5px;
+	font-family: $fontMontserrat;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	color: #000;
+	cursor: pointer;
+	background-color: transparent; // Прозрачный фон
+	background: url(../../../assets/Header_images/map.png) center/cover no-repeat;
+
+	// Стили для стрелки
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #000; // Цвет стрелки
+		margin-left: 3px; // Уменьшенный отступ от текста
+		vertical-align: middle;
+	}
+
+	// Стили при наведении
+	&:hover::after {
+		border-top-color: #000; // Цвет стрелки при наведении
+	}
+}

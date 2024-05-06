@@ -1,0 +1,144 @@
+.Sponsorship {
+    margin-top: 60px;
+
+    .SponsorshipBox {
+        display: flex;
+        justify-content: space-between;
+
+        .SponsorshipLeft {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .topContent {
+
+                .title {
+                    color: rgb(0, 0, 0);
+                    font-family: 'Roboto';
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 45px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                }
+            }
+
+            @media (max-width:1290px) {
+                .topContent {
+                    .title {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            @media (max-width:997px) {
+                .topContent {
+                    .title {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            @media (max-width:767px) {
+                .topContent {
+                    .title {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            @media (max-width:500px) {
+                .topContent {
+                    .title {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .bottomContent {
+
+                .title {
+                    color: rgb(0, 0, 0);
+                    font-family: 'Roboto';
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 45px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                }
+            }
+
+            @media (max-width:1290px) {
+                .bottomContent {
+                    .title {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            @media (max-width:997px) {
+                .bottomContent {
+                    .title {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+
+            @media (max-width:767px) {
+                .bottomContent {
+                    .title {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            @media (max-width:500px) {
+                .bottomContent {
+                    .title {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+        }
+
+        @media (max-width:767px) {
+            .SponsorshipLeft {
+                gap: 40px;
+            }
+        }
+
+        .SponsorshipRight {
+            height: 662px;
+            overflow: hidden;
+            width: 662px;
+
+            .spoLaptop {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        @media (max-width:1290px) {
+            .SponsorshipRight {
+                width: 390px;
+            }
+        }
+
+        @media (max-width:767px) {
+            .SponsorshipRight {
+
+                .spoLaptop {
+                    display: none;
+                }
+
+                .spoTablet {
+                    display: none;
+                }
+            }
+        }
+    }
+}

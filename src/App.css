@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'DMSans';
+	src: url(./fonts/DM_Sans/static/DMSans-Black.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(./fonts/Roboto/Roboto-Medium.ttf);
+}
+
+.container {
+	/* max-width: 91.667%; */
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1921px) {
+	.container {
+		max-width: 1440px;
+	}
+}
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
